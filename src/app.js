@@ -19,7 +19,7 @@ const session_secret = Math.random().toString(36).substring(2,12);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-app.use(helmet.xssFilter());
+app.use(helmet());
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
