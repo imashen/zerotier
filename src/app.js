@@ -19,7 +19,6 @@ const session_secret = Math.random().toString(36).substring(2,12);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-app.use(helmet.noCache());
 app.use(helmet.frameguard());
 app.use(helmet.ieNoOpen());
 app.use(helmet.referrerPolicy());
