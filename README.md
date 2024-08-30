@@ -1,2 +1,2 @@
-# zerotier
-# https://github.com/imashen/zerotier-server
+# Usage 
+https://github.com/imashen/zerotier-aio
